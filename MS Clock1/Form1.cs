@@ -38,6 +38,7 @@ namespace Clock
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //update displayed time every second
             timeZoneInfo = TimeZoneInfo.FindSystemTimeZoneById("US Mountain Standard Time");
             timeZoneInfo1 = TimeZoneInfo.FindSystemTimeZoneById("Korea Standard Time");
             dateTime = TimeZoneInfo.ConvertTime(DateTime.Now, timeZoneInfo);
